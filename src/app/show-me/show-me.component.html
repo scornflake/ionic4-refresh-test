@@ -1,10 +1,14 @@
-<p>
-    show-me works!
+<h2>Works</h2>
+<ul>
+    <li *ngFor="let row of rows">
+        {{row}}
+    </li>
+</ul>
 
-    <ion-grid>
-        <ion-row *ngFor="let row of rows">
-            <ion-col>{{row}}</ion-col>
-        </ion-row>
-    </ion-grid>
+<h2>Flicker on repaint</h2>
+<ion-grid>
+    <ion-row *ngFor="let row of rows">
+        <ion-col>{{row}}</ion-col>
+    </ion-row>
+</ion-grid>
 
-</p>
